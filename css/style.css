@@ -1,0 +1,140 @@
+/* all common css shuru */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background: #1e1e1e;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a,a:hover{
+    text-align: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    line-height: 0,8;
+}
+/* all common css sesh  */
+/* header part shuru  */
+.navbar{
+    background: #1e1e1e;
+}
+.nav-link{
+    color: #959595;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color: #FD6F00;
+}
+.hirebtn{
+    background: #FD6F00;
+    padding: 8px 25px;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 2px solid #FD6F00;
+    transition: .4s;
+}
+/* header part shes  */
+/* banner part css shuru  */
+#bannerpart{
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+}
+.bannercounter{
+    position: relative;
+}
+.bannertext{
+    position: relative;
+}
+.counteritem{
+    background: hsla(0, 0%, 100%, 0.4);
+    padding: 5px;
+     outline: none;
+    border: none;
+
+}
+.bannertext h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #707070;
+}
+.bannertext h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #959595;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+.bannertext h1{
+    background: linear-gradient(to right,#984300 0%, #FD6F00 46%, #ca5900 100%);
+    font-size: 70px;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #984300;
+}
+.hirebtn:hover{
+    background: transparent;
+    border: 2px solid #959595;
+}
+.bennaricon i{
+    color: #bababa;
+    font-size: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #bababa ;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+    margin: 16px 8px;
+
+}
+.bennaricon{
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
+.bannerbtn{
+    display: flex;
+    column-gap: 10px;
+}
+.bannercounter{
+    padding-top: 60px;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+.counteritem{
+    text-align: center;
+    color: #fff;
+    
+}
+.counteritem h2{
+    color: #FD6F00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.col-lg-6{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+/* banner part css shes  */
