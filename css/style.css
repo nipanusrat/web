@@ -5,7 +5,7 @@
     outline: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-    background: #1e1e1e;
+    
 }
 ul,ol{
     list-style-type: none;
@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     line-height: 0,8;
 }
+
 /* all common css sesh  */
 /* header part shuru  */
 .navbar{
@@ -58,13 +59,6 @@ h1,h2,h3,h4,h5,h6,p{
 .bannertext{
     position: relative;
 }
-.counteritem{
-    background: hsla(0, 0%, 100%, 0.4);
-    padding: 5px;
-     outline: none;
-    border: none;
-
-}
 .bannertext h4{
     font-size: 24px;
     font-weight: 600;
@@ -75,7 +69,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 700;
     color: #959595;
     padding-top: 10px;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
 }
 .bannertext h1{
     background: linear-gradient(to right,#984300 0%, #FD6F00 46%, #ca5900 100%);
@@ -104,7 +98,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 }
 .bennaricon{
-    padding-top: 17px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 .bannerbtn{
@@ -117,24 +111,122 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 10px;
 }
 .counteritem{
-    text-align: center;
-    color: #fff;
-    
+    padding: 10px;
+    border-right: 2px solid #959595;
+}
+.brn{
+    border-right: none;
 }
 .counteritem h2{
     color: #FD6F00;
     font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    padding-right: 50px;
+    font-weight: 800;
 }
-
-.col-lg-6{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    position: relative;
-
+.counteritem p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #dfdfdf;
+}
+.bannercounter{
+    background: rgba(255, 255, 255, 0.04);
+    padding: 24px;
+    margin-top: 50px;
 }
 
 /* banner part css shes  */
+/* service css shuru  */
+#service{
+    
+    
+}
+.service h3{
+    color: #fefefe;
+    font-size:40px ;
+    font-weight: 700;
+}
+.service p{
+    color: #707070;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(60rem 40rem at 50% -10%, rgba(255,157,31,.08), transparent 60%),
+    radial-gradient(40rem 25rem at 90% 120%, rgba(255,157,31,.06), transparent 60%),
+    var(--bg);
+  color:var(--text);
+}
+
+.services{padding:72px 0}
+.container{
+  width:min(1150px, 92%);
+  margin-inline:auto;
+}
+
+.title{
+  text-align:center;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing:.4px;
+  margin:0 0 6px;
+}
+.sub{
+  text-align:center;
+  color:var(--muted);
+  margin:0 auto 36px;
+  max-width: 720px;
+  line-height:1.6;
+}
+
+:root{
+  --bg:#0f1012;
+  --card:#1a1b1f;
+  --muted:#9aa3af;
+  --text:#e5e7eb;
+  --accent:#ff9d1f; /* warm orange */
+  --ring: rgba(255,157,31,.25);
+}
+
+/* grid */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+
+/* card */
+.card{
+  background: linear-gradient(180deg, #1b1c21 0%, #16171b 100%);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:34px 26px 30px;
+  text-align:center;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.04) inset,
+    0 20px 40px rgba(0,0,0,.35);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.card .icon{
+  width:64px;height:64px;
+  margin:0 auto 14px;
+  display:grid;place-items:center;
+  color:var(--accent);
+  filter: drop-shadow(0 6px 14px rgba(255,157,31,.35));
+}
+.card h3{
+  margin:4px 0 10px;
+  font-size:20px;
+  font-weight:700;
+  color: var(--accent);
+}
+.card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.6;
+}
+
